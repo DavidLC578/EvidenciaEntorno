@@ -51,6 +51,16 @@ public class CuentaBancaria {
 		return prestamo;
 	}
 
+	/**
+	 * 
+	 * Recibe una cantidad y si cumple todo los requisitos añade el préstamo a tu cuenta
+	 * 
+	 * @param cantidad
+	 * @throws Exception.class si tiene préstamo no se le puede realizar un préstamo 
+	 * 
+	 * 
+	 * 
+	 * */
 	public void solicitarPrestamo(double cantidad) throws Exception {
 		if (tienePrestamo || obtenerSaldo()==0) {
 			throw new Exception("No se le puede realizar un prestamo");
